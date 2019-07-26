@@ -1,0 +1,5 @@
+File name, Mouse name, Recording position,Home directory, useless column, shank,Time
+myfile_m1_shk1_0, m1,1, /path/to/my/folder/, stuff I won't use, shk1,10:02:00
+myfile_m1_shk2_0, m1,1, /path/to/my/folder/, stuff I won't use, shk2,10:02:00
+myfile_m1_shk1_1, m1,2, /path/to/my/folder/, stuff I won't use, shk1,11:01:00
+ill_fomated_name,m2,1, /path/to/my/folder/, stuff I won't use, shk1,13:00:00

@@ -1,0 +1,31 @@
+channel_groups = {0: {'channels': [0, 1, 2, 3],
+                      'geometry': {0: (0, 1), 1: (-0.25, 1.25), 2: (0.25, 1.25), 3: (0, 1.5)},
+                      'graph': [(0, 1), (0, 2), (0, 3), (1, 2), (1, 3), (2, 3)]}}
+
+"""
+import itertools
+channels0 = []
+
+graph0 = []
+geometry0 = dict()
+
+## add the tetrode:
+
+tetchan = range(0,0+4)
+channels0.extend(tetchan)
+graph0.extend(itertools.combinations(tetchan,2))
+
+xshift = [0, -.25,.25,0]
+yshift = [0,.25,.25,0.5]
+center = 0+1
+for c in tetchan:
+  geometry0[c] = (xshift[c%4], center+yshift[c%4])
+
+
+channel_groups = {}
+channel_groups[0] = {}
+channel_groups[0]['channels'] = channels0
+channel_groups[0]['graph'] = graph0
+channel_groups[0]['geometry'] = geometry0
+
+"""
